@@ -1,4 +1,4 @@
-import Easy from "../AboutCompany/Easy";
+import Easy from "./Easy";
 import OurWorks from "./OurWorks";
 import "./Works.scss";
 export default function Works({ openPopup }) {
