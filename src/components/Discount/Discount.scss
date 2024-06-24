@@ -1,0 +1,37 @@
+@import "./../../scss/variables.scss";
+.discount {
+	&__container {
+		display: flex;
+		align-items: center;
+		gap:30px;
+		@media(max-width:991px){
+			flex-direction: column;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap:40px;
+		@media(max-width:991px){
+			gap:30px;
+			text-align: center;
+		}
+	}
+	&__title {
+		text-wrap: balance;
+		& span{
+			color: $secondary;
+		}
+		text-align: left !important;
+		@media(max-width: 991px) {
+			text-align: center;
+		}
+	}
+	&__subtitle {
+		text-wrap: balance;
+		font-size: 24px;
+		@media(max-width:550px){
+			font-size: 18px;
+		}
+	}
+}

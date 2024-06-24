@@ -1,0 +1,46 @@
+@import "./../../scss/variables.scss";
+.costs {
+	&__title {
+		margin-bottom: 60px;
+		@media(max-width: 835px){
+			margin-bottom: 35px;
+		}
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+		gap:30px;
+		row-gap:50px;
+		@media(max-width: 767px){
+			grid-template-columns: 1fr;
+			row-gap:0;
+			gap:30px;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap:10px;
+	}
+	&__item-title {
+		font-weight: 500;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	&__item {
+		font-weight: 400;
+		font-size: 16px;
+		color: #818396;
+		padding-left: 17px;
+		position: relative;
+		&:before{
+			content:'';
+			position: absolute; 
+			left: 0; top: 50%;
+			width: 6px;
+			height: 6px;
+			background: $main;
+			transform:translate(0, -70%) rotate(45deg); 
+		}		
+	}
+}

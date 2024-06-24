@@ -1,0 +1,10 @@
+.title {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: calc(60/48);
+	text-align: center;
+	color: #17152C;
+	@media(max-width: 1023px) {
+		font-size: calc(32px + (48 - 32) * ((100vw - 375px) / (1023 - 375)));
+	}
+}
